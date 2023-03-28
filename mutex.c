@@ -23,13 +23,13 @@ void *decrease()
     int i;
     for (i = 0; i < 99999; i++)
     {
-        counter‐‐;
+        counter--;
         printf("Counter value: %d\n", counter);
     }
     pthread_mutex_unlock(&mutex1);
 }
 
-main()
+int main()
 {
     int rc1, rc2;
     pthread_t thread1, thread2;
