@@ -9,7 +9,7 @@ void *increase()
 {
     pthread_mutex_lock(&mutex1);
     int i;
-    for (i = 0; i < 99999; i++)
+    for (i = 0; i < 15; i++)
     {
         counter++;
         printf("Counter value: %d\n", counter);
@@ -21,7 +21,7 @@ void *decrease()
 {
     pthread_mutex_lock(&mutex1);
     int i;
-    for (i = 0; i < 99999; i++)
+    for (i = 0; i < 15; i++)
     {
         counter--;
         printf("Counter value: %d\n", counter);
